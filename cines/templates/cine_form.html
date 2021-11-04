@@ -1,0 +1,7 @@
+<h1>ingresa los datos del cine</h1>
+
+<form action="{{ action }}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar vehiculo</button>
+</form>
